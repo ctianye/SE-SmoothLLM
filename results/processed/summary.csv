@@ -1,0 +1,17 @@
+metric,split,method,n,value,std,early_stop_rate,internal_jailbroken_rate,prompt_tokens_mean,completion_tokens_mean,latency_ms_mean,positive_count,format_conforming_rate,mismatch_count,avg_query_reduction,avg_prompt_token_reduction,avg_completion_token_reduction
+internal_efficiency,benign,se_smoothllm,300,6.946666666666666,1.3277922766716381,0.94,0.7766666666666666,448.7266666666667,925.6866666666666,65457.86310525611,,,,,,
+internal_efficiency,benign,smoothllm_fixed,300,10.0,0.0,0.0,0.7766666666666666,646.5866666666667,1330.1266666666668,94086.20366437982,,,,,,
+internal_efficiency,benign,undefended,300,1.0,0.0,0.0,0.88,54.9,145.6,10262.590755106261,,,,,,
+internal_efficiency,harmful,se_smoothllm,300,6.203333333333333,1.456844836790739,0.9666666666666667,0.09,653.2333333333333,627.5533333333333,44922.09674496824,,,,,,
+internal_efficiency,harmful,smoothllm_fixed,300,10.0,0.0,0.0,0.09,1053.3466666666666,1000.65,71664.5337563008,,,,,,
+internal_efficiency,harmful,undefended,300,1.0,0.0,0.0,0.98,77.5,146.39,10338.638649576655,,,,,,
+deepseek_harmful_asr,harmful,se_smoothllm,300,0.06,,,,,,,18.0,1.0,,,,
+deepseek_harmful_asr,harmful,smoothllm_fixed,300,0.06333333333333334,,,,,,,19.0,1.0,,,,
+llama3_8b_refusal_rate,benign,se_smoothllm,300,0.17333333333333334,,,,,,,52.0,0.23666666666666666,,,,
+llama3_8b_refusal_rate,benign,smoothllm_fixed,300,0.16333333333333333,,,,,,,49.0,0.22666666666666666,,,,
+llama3_8b_refusal_rate,benign,undefended,300,0.08,,,,,,,24.0,0.12333333333333334,,,,
+llama3_8b_refusal_rate,harmful,se_smoothllm,300,0.7566666666666667,,,,,,,227.0,0.76,,,,
+llama3_8b_refusal_rate,harmful,smoothllm_fixed,300,0.77,,,,,,,231.0,0.77,,,,
+llama3_8b_refusal_rate,harmful,undefended,300,0.07,,,,,,,21.0,0.08,,,,
+fixed_vs_se_exactness,benign,se_vs_fixed,300,1.0,,,,,,,,,0.0,0.3053333333333333,0.304948533816253,0.30158816311305775
+fixed_vs_se_exactness,harmful,se_vs_fixed,300,1.0,,,,,,,,,0.0,0.3796666666666667,0.37940354842487106,0.3851158534520261

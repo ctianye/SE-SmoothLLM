@@ -1,0 +1,72 @@
+SE-SmoothLLM
+Copyright (c) 2026 Ctianye
+
+This project is an independent engineering implementation inspired by the SmoothLLM
+research line. Third-party materials incorporated by the project are documented below.
+
+-------------------------------------------------------------------------------
+
+SmoothLLM character perturbations and refusal-phrase judge
+Source: https://github.com/arobey1/smooth-llm
+Reference commit: 1855c8791d4ffbcd902abcdd1b5ef69fda1a96e0
+
+The RandomSwapPerturbation, RandomPatchPerturbation, and RandomInsertPerturbation
+implementations are adapted from the SmoothLLM perturbation design and modified to
+use caller-provided random number generators and explicit edge-case handling. The
+PrefixJudge default refusal phrases and matching semantics are adapted from SmoothLLM's
+Defense.is_jailbroken implementation.
+
+MIT License
+
+Copyright (c) 2023 Alex Robey
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-------------------------------------------------------------------------------
+
+JailbreakBench Llama-3 refusal Judge prompt and matching semantics
+Source: https://github.com/JailbreakBench/jailbreakbench
+Reference commit: 23dbdf6b19650521604456229bc1d9c4156c85c1
+
+The versioned Llama-3-8B refusal Judge configuration incorporates the prompt and
+positive-answer substring matching semantics from JailbreakBench's
+Llama3RefusalJudge implementation. The local runner adds checkpointing, source
+hashes, token accounting, and output-format auditing.
+
+MIT License
+
+Copyright (c) 2023 JailbreakBench Team
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

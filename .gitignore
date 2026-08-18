@@ -1,0 +1,88 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+__pypackages__/
+
+# Packaging and build output
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Test, coverage, and lint caches
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.hypothesis/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.local.yaml
+*.local.yml
+*.local.toml
+*.local.json
+
+# Logs and runtime state
+*.log
+logs/
+*.pid
+*.pid.lock
+
+# Downloaded datasets and experiment caches
+.cache/
+data/downloads/
+data/cache/
+artifacts/downloads/
+results/raw/
+results/judged/
+results/cache/
+results/runtime/
+
+# Local experiment archives and extracted snapshots
+backups/
+repo/
+
+# Local model weights and checkpoints
+models/
+checkpoints/
+*.safetensors
+*.gguf
+*.ckpt
+*.pt
+*.pth
+*.onnx
+
+# Generated documentation
+site/
+
+# IDE and editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
